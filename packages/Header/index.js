@@ -1,11 +1,14 @@
 import React from 'react'
 import { array } from 'prop-types'
 
-const Header = ({items}) => {
+const Header = ({ items }) => {
   return (
-    <ul>
-      {items.map(item => <li>{item.label}</li>)}
-    </ul>
+    <nav>
+      <p>This is the header</p>
+      <ul>
+        {items.map(item => <li>{item.label}</li>)}
+      </ul>
+    </nav>
   )
 }
 
